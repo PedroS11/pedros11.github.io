@@ -7,8 +7,8 @@ theme  = 'PaperMod'
 [params]
     env = "development" # to enable local features
     title = "Pedro Silva"
-    description = "A blog about cool stuff"
-    author = "Pedro"
+    description = "A blog about my experiences as a software developer"
+    author = "Pedro Silva"
 
     [params.homeInfoParams]
     Title = " Hey, I'm Pedro! 👋🏻"
@@ -31,6 +31,10 @@ theme  = 'PaperMod'
     [[params.socialIcons]]
         name = "stackoverflow"
         url = "https://stackoverflow.com/users/9661304/pedro-silva"
+
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/pedro-oliveira-silva"
 
 # Navigation Menu
 [menu]
