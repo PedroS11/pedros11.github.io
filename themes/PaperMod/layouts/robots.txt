@@ -4,4 +4,8 @@ Disallow:
 {{- else }}
 Disallow: /
 {{- end }}
+
+# Cloudflare Content Signals (Machine Readable)
+Content-Signal: search=yes, ai-input=no, ai-train=no
+
 Sitemap: {{ "sitemap.xml" | absURL }}
