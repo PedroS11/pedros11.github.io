@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 # This block fixes the "can't evaluate field Author" error
 [params]
-    env = "development" # to enable local features
+    env = "production" # to enable local features
     title = "Pedro Silva"
     description = "A blog about my experiences as a software developer"
     author = "Pedro Silva"
@@ -18,9 +18,8 @@ enableRobotsTXT = true
 
 - A backend developer that likes to build stuff that makes my life easier.
 -
-- Currently, I'm working at Mindera on AWS ecosystem project in Typescript for an e-commerce company. Previously, a .Net Core/PL SQL developer for a health software company.
+- Master in Computer Science since 2018, currently working at Mindera on AWS ecosystem project in Typescript for an e-commerce company. Previously, a .Net Core/PL SQL developer for a health software company.
 """
-
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/PedroS11"
