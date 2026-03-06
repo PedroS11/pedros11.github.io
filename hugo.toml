@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Pedro Silva'
 theme  = 'PaperMod'
+enableRobotsTXT = true
 
 # This block fixes the "can't evaluate field Author" error
 [params]
