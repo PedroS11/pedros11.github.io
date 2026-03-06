@@ -1,0 +1,59 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Pedro Silva'
+theme  = 'PaperMod'
+
+# This block fixes the "can't evaluate field Author" error
+[params]
+    env = "development" # to enable local features
+    title = "Pedro Silva"
+    description = "A blog about cool stuff"
+    author = "Pedro"
+
+    [params.homeInfoParams]
+    Title = " Hey, I'm Pedro! 👋🏻"
+    Content = """
+
+
+- A backend developer that likes to build stuff that makes my life easier.
+-
+- Currently, I'm working at Mindera on AWS ecosystem project in Typescript for an e-commerce company. Previously, a .Net Core/PL SQL developer for a health software company.
+"""
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/PedroS11"
+
+    [[params.socialIcons]]
+        name = "twitter"
+        url = "https://twitter.com/iterm11_"
+
+    [[params.socialIcons]]
+        name = "stackoverflow"
+        url = "https://stackoverflow.com/users/9661304/pedro-silva"
+
+# Navigation Menu
+[menu]
+    [[menu.main]]
+        identifier = "search"
+        name = "Search"
+        url = "/search/"
+        weight = 10
+    [[menu.main]]
+        identifier = "archives"
+        name = "Archive"
+        url = "/archives/"
+        weight = 5
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 5
+
+# This provides a fallback for the RSS feed template
+[author]
+    name = "Pedro"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
