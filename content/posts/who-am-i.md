@@ -40,7 +40,7 @@ I was placed with a major e-commerce client and have been an integral part of th
 My team builds and maintains the core systems handling product, pricing, and stock data.
 
 ### Technical Focus & Expertise
-- **TypeScript**: I am a strong advocate of "types everywhere" ensuring our codebase remains clean and readable.
+- **TypeScript**: I am a strong advocate of "everything must have a clear and defined type" ensuring our codebase remains clean and readable.
 
 - **Search & Discovery**: I have experience working with Algolia for product indexing and recently work on the migration to Google Cloud Retail to optimize product data delivery.
 
