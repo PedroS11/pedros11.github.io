@@ -3,7 +3,8 @@ date = '2026-03-04T10:40:12Z'
 summary = 'My name is Pedro Silva, and here is everything you need to know about me.'
 draft = false
 title = 'Who am I?'
-tags = ["it", "computer science", "dev"]
+tags = ["it", "computer science", "dev", "aws", "amazon", "gitlab", "typescript", "algolia", "ci/cd", "Google", "VAIS:C",
+"Google Cloud Retail"]
 ShowBreadCrumbs = true
 ShowReadingTime = true
 ShowShareButtons = true
@@ -36,18 +37,18 @@ I spent two years there before deciding to move to Mindera.
 ## Mindera
 I joined Mindera in 2020, encouraged by friends who spoke highly of the culture and the company's focus on Node.js—a technology I had grown to love during university but found limited opportunities for locally.
 
-I was placed with a major e-commerce client and have been an integral part of that partnership ever since. 
-My team builds and maintains the core systems handling product, pricing, and stock data.
+I was placed with a international e-commerce client and have been an integral part of that client ever since. 
+My team is responsible for building and maintaining the core systems handling product, pricing, and stock data.
 
-### Technical Focus & Expertise
-- **TypeScript**: I am a strong advocate of "everything must have a clear and defined type" ensuring our codebase remains clean and readable.
+All the code is written in **TypeScript** and I'm one of the most enforcers of creating and adding meaningful types to our codebase, ensuring it remains clean and readable.
+Putting `any` everywhere or not add the types to the function arguments and return values due to laziness, it's something I really hate because,
+in the future, that will come back to haunt the team.
 
-- **Search & Discovery**: I have experience working with Algolia for product indexing and recently work on the migration to Google Cloud Retail to optimize product data delivery.
+Back at **Glintt**, everything was deployed to servers in the hospitals whereas now, we use work daily with the **AWS** ecosystem, like Lambdas, SNS, SQS, EventBridge, and DynamoDB.
+But we also use other third party services, for example, to have faster product searches we used to rely on **Algolia** for severly years.
+Most recently, we migrated to **Google Cloud Retail** to optimize product data delivery.
 
-- **Cloud Architecture**: I work daily within the AWS ecosystem, leveraging Lambdas, SNS, SQS, EventBridge, and DynamoDB, for example.
-
-- **Modern DevOps**: Shifted from on-premise environments to the cloud and I now utilize GitLab CI/CD for automated deployments, collaborating with dedicated platform teams to keep our pipelines "plug-and-play."
-
-- **Quality**: Every feature is backed by rigorous unit testing and QA verification.
+Everything we write must be covered by unit tests and QA verification on the feature branches and quality environemnts before reaching production
+For that, we utilize **GitLab** CI/CD for automated deployments, collaborating with dedicated platform teams to keep our pipelines "plug-and-play."
 
 It has been a great and learning experience so far. Hope to keep learning and growing!
