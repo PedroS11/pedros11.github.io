@@ -20,13 +20,13 @@ In 2013, I enrolled at the Faculty of Engineering at the University of Porto (FE
 # Work Experience
 
 ## Glintt HS
-I graduated with a final grade of 16 and began my career as a software engineer at Glintt. As often happens with corporate thesis projects, mine was shelved, and I began working on their core systems. Transitioning from "dummy" university projects to real-world software was an eye-opener.
+I graduated with a final grade of 16 and began my career as a software engineer at **Glintt**. As often happens with corporate thesis projects, mine was shelved, and I began working on their core systems. Transitioning from "dummy" university projects to real-world software was an eye-opener.
 
-I quickly realized that Portuguese health systems can be quite archaic, often built on outdated technologies and processes. Much of the code was written in PL/SQL directly within the database, lacking a proper IDE for debugging, and—worst of all—there was no version control system. Deployments were almost entirely manual.
+I quickly realized that Portuguese health systems can be quite archaic, often built on outdated technologies and processes. Much of the code was written in **PL/SQL** directly within the database, lacking a proper IDE for debugging, and—worst of all—there was no version control system. Deployments were almost entirely manual.
 
-Coming from a modern university ecosystem, I was a bit naive about how much legacy code exists in the industry. I learned that the primary hurdle is often financial; because private and public systems must communicate (often via SOAP or PL/SQL procedures), upgrading a single database requires every connected system to follow suit, which is costly and time-consuming.
+Coming from a modern university ecosystem, I was a bit naive about how much legacy code exists in the industry. I learned that the primary hurdle is often financial; because private and public systems must communicate (often via **SOAP** or **PL/SQL** procedures), upgrading a single database requires every connected system to follow suit, which is costly and time-consuming.
 
-Codewise, I spent my first six months working with PL/SQL (which I don’t particularly recommend!), before moving to .NET Core. My manager was very forward-thinking and pushed for new hires to adopt .NET Core and Docker. We became the first team to use Docker to build systems connecting third-party platforms to Glintt’s infrastructure.
+Codewise, I spent my first six months working with **PL/SQL** (which I don’t particularly recommend!), before moving to **.NET Core**. My manager was very forward-thinking and pushed for new hires to adopt **.NET Core** and **Docker**. We became the first team to use **Docker** to build systems connecting third-party platforms to Glintt’s infrastructure.
 
 One of my most significant projects involved validating medicines entering hospitals. Following EU mandates, laboratories must register every box of medicine produced. Our system scanned these barcodes, validated them against the EU database, and returned the status to the logistics team. After an intensive certification process, we became the first company in Portugal to have a certified medicine validation system.
 
