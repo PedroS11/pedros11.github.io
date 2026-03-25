@@ -6,11 +6,14 @@ summary = 'A browser extension that helps you track when your favorite Twitch st
 tags = ["browser-extension", "twitch","chrome", "firefox", "extension", "typescript", "react"]
 +++
 
+## Twitch Live Extension
+
 Twitch Live Extension is a browser extension that will help you find out when your followed streamers are live on Twitch 
 and will send notifications when they go live.
- 
-It's available for Chrome/Edge on the [Chrome Web Store](https://chromewebstore.google.com/detail/twitch-live-extension/nlnfdlcbnpafokhpjfffmoobbejpedgj)
+
+It's available for every Chromium based browser (Chrome/Edge/Arch, etc) on the [Chrome Web Store](https://chromewebstore.google.com/detail/twitch-live-extension/nlnfdlcbnpafokhpjfffmoobbejpedgj)
 and Firefox on the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/twitch-live-extension/).
+
 ---
 ## The idea
 Back in 2019, we were all asked to stay at home due to the COVID-19 pandemic. So I ended up spending a lot of time on Twitch and
