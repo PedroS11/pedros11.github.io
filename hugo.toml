@@ -37,6 +37,13 @@ enableEmoji = true
     images = ["images/pedro-silva-og.jpg"]
     defaultTheme = "auto"
     
+    # Open Graph configuration
+    [params.cover]
+        linkFullImages = true
+        
+    [params.profileMode]
+        enabled = false
+    
     # Asset configuration
     [params.assets]
         favicon = "favicon.ico"
