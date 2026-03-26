@@ -1,25 +1,31 @@
 +++
 date = '2026-03-04T10:40:12Z'
-summary = 'My name is Pedro Silva, and here is everything you need to know about me.'
+lastmod = '2026-03-25T12:00:00Z'
+summary = 'Software engineer Pedro Silva shares his journey from Computer Science at FEUP to AWS TypeScript development at Mindera, including experience with .NET Core, PL/SQL, and e-commerce systems.'
+description = 'Meet Pedro Silva, a software engineer working with AWS, TypeScript, and e-commerce systems. Learn about his career journey from healthcare software development to modern cloud architecture.'
 draft = false
-title = 'Who am I?'
-tags = ["it", "computer science", "dev", "aws", "amazon", "gitlab", "typescript", "algolia", "ci/cd", "Google", "VAIS:C",
-"Google Cloud Retail"]
+title = 'About Pedro Silva - Software Engineer & AWS TypeScript Developer'
+keywords = ["Pedro Silva", "software engineer", "AWS developer", "TypeScript developer", "Mindera", "Glintt", "FEUP", "Computer Science", "cloud architecture", "e-commerce development"]
+tags = ["software-engineer", "aws", "typescript", "career", "mindera", "glintt", "feup", "computer-science", "cloud-development", "e-commerce", "dotnet-core", "plsql", "gitlab-cicd", "algolia", "google-cloud-retail"]
+categories = ["About", "Career"]
+author = "Pedro Silva"
 ShowBreadCrumbs = true
 ShowReadingTime = true
 ShowShareButtons = true
+ShowToc = true
+TocOpen = false
 +++
 
-My name is Pedro Silva, and I'm a software engineer at Mindera.
+My name is **Pedro Silva**, and I'm a **software engineer at Mindera** working with **AWS cloud architecture** and **TypeScript development**. With over 8 years of experience in software development, I've worked across various technologies from legacy systems to modern cloud-native applications.
 
 Ever since I was a kid, I spent countless hours playing video games, initially on a Gameboy Color. However, once my parents bought me a computer, I discovered a whole new world. My father always pushed me to learn more about how they worked, helping me understand different components through trial and error. Even though I didn't have early experience in software development, it always felt like my future career would involve computers.
 
-# Education
+## Education & Academic Background
 In 2013, I enrolled at the Faculty of Engineering at the University of Porto (FEUP) to study Computer Science. At the time, the program was an integrated Master’s; five years later, I graduated with my Master's degree. I completed my thesis at Glintt, a Portuguese company that develops software for hospitals and pharmacies. My project focused on using machine learning to provide doctors with a list of possible medicines based on a patient's symptoms.
 
-# Work Experience
+## Professional Experience
 
-## Glintt HS
+### Glintt HS - Healthcare Software Development (2018-2020)
 I graduated with a final grade of 16 and began my career as a software engineer at **Glintt**. As often happens with corporate thesis projects, mine was shelved, and I began working on their core systems. Transitioning from "dummy" university projects to real-world software was an eye-opener.
 
 I quickly realized that Portuguese health systems can be quite archaic, often built on outdated technologies and processes. Much of the code was written in **PL/SQL** directly within the database, lacking a proper IDE for debugging, and—worst of all—there was no version control system. Deployments were almost entirely manual.
@@ -34,7 +40,7 @@ Working at Glintt taught me how to handle legacy code, high-pressure environment
 
 I spent two years there before deciding to move to Mindera.
 
-## Mindera
+### Mindera - E-commerce & AWS Development (2020-Present)
 I joined Mindera in 2020, encouraged by friends who spoke highly of the culture and the company's focus on Node.js—a technology I had grown to love during university but found limited opportunities for locally.
 
 I was placed with a international e-commerce client and have been an integral part of that client ever since. 
@@ -52,3 +58,19 @@ Everything we write must be covered by unit tests and QA verification on the fea
 For that, we utilize **GitLab** CI/CD for automated deployments, collaborating with dedicated platform teams to keep our pipelines "plug-and-play."
 
 It has been a great and learning experience so far. Hope to keep learning and growing!
+
+## Technical Skills & Expertise
+
+**Cloud Platforms**: AWS (Lambda, SNS, SQS, EventBridge, DynamoDB)  
+**Programming Languages**: TypeScript, JavaScript, C#, PL/SQL  
+**Frameworks & Libraries**: Node.js, .NET Core, React  
+**Tools & Services**: GitLab CI/CD, Docker, Algolia, Google Cloud Retail  
+**Databases**: DynamoDB, MySQL, Oracle  
+
+## Side Projects & Open Source
+
+Beyond my professional work, I enjoy building tools that solve real problems. My most successful project is the [Twitch Live Extension](/posts/twitch-live-extension/), a browser extension that helps users track their favorite streamers and has grown to over 20,000 users across Chrome and Firefox.
+
+## Let's Connect
+
+I'm always interested in discussing software development, cloud architecture, and innovative projects. Feel free to reach out through my social media links or check out my other blog posts where I share technical insights and project experiences.

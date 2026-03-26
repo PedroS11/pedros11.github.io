@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:
+
+# Cloudflare Content Signals (Machine Readable)
+Content-Signal: search=yes, ai-input=no, ai-train=no
+
+# Sitemaps
+Sitemap: https://blog.psilva.dev/sitemap.xml
+
+# Allow crawling of all content
+Allow: /posts/
+Allow: /tags/
+Allow: /archives/
+Allow: /search/
