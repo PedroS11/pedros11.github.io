@@ -34,7 +34,7 @@ enableEmoji = true
         ]
 
     # SEO and Open Graph settings
-    images = ["images/pedro-silva-og.jpg"]
+    images = ["/images/pedro-silva-og.jpg"]
     defaultTheme = "auto"
     
     # Open Graph configuration
