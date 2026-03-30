@@ -173,6 +173,6 @@ I tried multiple ways to make it work, and the final and only solution was to:
 - **Firefox**: Save the token in browser storage when the background script runs. Then, every time the popup is opened, it will fetch the token from browser storage.
 ---
 
-*Want to learn more about my development journey? Check out my [About page](/posts/who-am-i/) or explore other projects on my blog.*
+*Want to learn more about my development journey? Check out my [About page](/posts/about-pedro-silva-software-engineer/) or explore other projects on my blog.*
 
 
