@@ -1,4 +1,4 @@
-baseURL = 'https://blog.psilva.dev'
+baseURL = 'https://blog.pedroosilva.dev'
 languageCode = 'en-us'
 title = 'Pedro Silva - Software Engineer'
 theme  = 'PaperMod'
@@ -118,7 +118,7 @@ enableEmoji = true
     name = "Pedro Silva"
     email = "pedro@psilva.dev"
     bio = "Software Engineer specializing in AWS, TypeScript, and modern web development. Building scalable solutions and sharing knowledge through code."
-    image = "https://blog.psilva.dev/images/pedro-silva-avatar.jpg"
+    image = "https://blog.pedroosilva.dev/images/pedro-silva-avatar.jpg"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
