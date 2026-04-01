@@ -116,7 +116,7 @@ enableEmoji = true
 # This provides a fallback for the RSS feed template
 [author]
     name = "Pedro Silva"
-    email = "pedro@psilva.dev"
+    email = "pedrosilva1137work@gmail.com"
     bio = "Software Engineer specializing in AWS, TypeScript, and modern web development. Building scalable solutions and sharing knowledge through code."
     image = "https://blog.pedroosilva.dev/images/pedro-silva-avatar.jpg"
 
