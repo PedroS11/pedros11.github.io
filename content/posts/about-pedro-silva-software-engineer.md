@@ -1,7 +1,7 @@
 +++
 date = '2026-03-04T10:40:12Z'
 lastmod = '2026-03-25T12:00:00Z'
-summary = 'Software engineer Pedro Silva shares his journey from Computer Science at FEUP to AWS TypeScript development at Mindera, including experience with .NET Core, PL/SQL, and e-commerce systems.'
+summary = 'Let me introduce you to my journey from Computer Science at FEUP to AWS TypeScript development at Mindera, including experience with .NET Core, PL/SQL, and e-commerce systems.'
 description = 'My name is Pedro Silva and I'm a software engineer working with AWS, TypeScript, and e-commerce systems. Spare some time to learn about my career journey from healthcare software development to modern cloud architecture.'
 draft = false
 title = 'About Pedro Silva - Software Engineer'
