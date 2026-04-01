@@ -2,7 +2,7 @@
 date = '2026-03-04T10:40:12Z'
 lastmod = '2026-03-25T12:00:00Z'
 summary = 'Software engineer Pedro Silva shares his journey from Computer Science at FEUP to AWS TypeScript development at Mindera, including experience with .NET Core, PL/SQL, and e-commerce systems.'
-description = 'Meet Pedro Silva, a software engineer working with AWS, TypeScript, and e-commerce systems. Learn about his career journey from healthcare software development to modern cloud architecture.'
+description = 'My name is Pedro Silva and I'm a software engineer working with AWS, TypeScript, and e-commerce systems. Spare some time to learn about my career journey from healthcare software development to modern cloud architecture.'
 draft = false
 title = 'About Pedro Silva - Software Engineer'
 keywords = ["Pedro Silva", "software engineer", "AWS developer", "TypeScript developer", "Mindera", "Glintt", "FEUP", "Computer Science", "cloud architecture", "e-commerce development"]
