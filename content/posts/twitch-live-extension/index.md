@@ -16,7 +16,7 @@ ShowToc = true
 TocOpen = false
 
 [cover]
-image = "twitch-extension-cover.png"
+image = "twitch-extension-cover.jpg"
 alt = "Twitch Live Extension browser interface showing live streamers"
 caption = "Twitch Live Extension helping users track their favorite streamers"
 relative = true
