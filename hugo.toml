@@ -36,6 +36,10 @@ enableEmoji = true
     # SEO and Open Graph settings
     images = ["images/pedro-silva-og.jpg"]
     defaultTheme = "auto"
+
+    # PaperMod: twitter:site meta (Twitter / X link previews)
+    [params.social]
+        twitter = "iterm11_"
     
     # Open Graph configuration
     [params.cover]
