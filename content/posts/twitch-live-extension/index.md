@@ -22,7 +22,9 @@ caption = "Twitch Live Extension helping users track their favorite streamers"
 relative = true
 +++
 
-**Twitch Live Extension** is a comprehensive browser extension built with **React** and **TypeScript** that helps users track when their favorite Twitch streamers go live and sends real-time notifications. With over **20,000 users** across multiple browsers, it's become one of the most popular Twitch tracking extensions available.
+**Twitch Live Extension** is a comprehensive browser extension built with **React** and **TypeScript** that helps users 
+track when their favorite Twitch streamers are live and sends go-live notifications. 
+With over **20,000 users** across multiple browsers, it's become one of the most popular Twitch tracking extensions available.
 
 ## 🚀 Quick Links
 
