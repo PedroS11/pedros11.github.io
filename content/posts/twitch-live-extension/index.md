@@ -26,13 +26,15 @@ relative = true
 
 ## 🚀 Quick Links
 
-- **Chrome Web Store**: [Download for Chrome/Edge/Brave](https://chromewebstore.google.com/detail/twitch-live-extension/nlnfdlcbnpafokhpjfffmoobbejpedgj)
-- **Firefox Add-ons**: [Download for Firefox](https://addons.mozilla.org/en-US/firefox/addon/twitch-live-extension/)
-- **GitHub Repository**: [View Source Code](https://github.com/PedroS11/twitch-live-extension)
+**Chrome Web Store**: [Install on Chrome/Edge/Brave](https://chromewebstore.google.com/detail/twitch-live-extension/nlnfdlcbnpafokhpjfffmoobbejpedgj)
+
+**Firefox Add-ons**: [Install on Firefox](https://addons.mozilla.org/en-US/firefox/addon/twitch-live-extension/)
+
+**GitHub Repository**: [View Source Code](https://github.com/PedroS11/twitch-live-extension)
 
 ## Key Features
 
-✅ **Real-time notifications** when streamers go live  
+✅ **Near real-time notifications** when streamers go live  
 ✅ **Automatic follower sync** via Twitch OAuth  
 ✅ **Live viewer counts** and stream information  
 ✅ **Cross-browser compatibility** (Chrome, Firefox, Edge, Brave)  
