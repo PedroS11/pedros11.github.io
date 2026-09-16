@@ -95,7 +95,7 @@ option was enough for my needs.
 ### Architecture design
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/PedroS11/efatura-amigo-be/refs/heads/main/architecture.png" alt="Architecture diagram: browser extension, API Gateway, Lambda, DynamoDB, Nif.pt, Telegram" style="width: 700px; height: auto;" />
+    <img src="https://lucid.app/publicSegments/view/bed54fc0-0d57-4657-9059-527c7bf12665/image.png" alt="Architecture diagram: browser extension, API Gateway, Lambda, DynamoDB, Nif.pt, Telegram" style="width: 700px; height: auto;" />
     <small>Architecture diagram</small>
 </p>
 

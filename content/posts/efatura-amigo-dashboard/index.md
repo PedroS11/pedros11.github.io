@@ -33,6 +33,9 @@ where I could easily do it seemed like the next step.
 
 ## Backend
 
+![architecture](https://lucid.app/publicSegments/view/bed54fc0-0d57-4657-9059-527c7bf12665/image.png "architecture")
+
+
 ### Authentication
 
 Since I'm running this on free tier services, the new endpoints must be behind authentication where I can control who can
