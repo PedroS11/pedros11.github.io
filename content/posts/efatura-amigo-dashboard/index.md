@@ -3,8 +3,8 @@ date = '2026-09-16T14:15:28+01:00'
 summary = 'Dashboard to visualise data that powers Efatura Amigo browser extension'
 draft = false
 title = 'Efatura Amigo Dashboard'
-keywords = ["NIF", "Efatura", "Portugal", "TypeScript", "Chrome extension", "Firefox addon", "AWS", "Dynamo", "Algolia", "Cloudflare"] 
-tags = ["efatura", "cloudflare", "react", "typescript", "chrome-extension", "firefox-addon", "web-development", "aws", "dynamo", "algolia", "cloudflare"] 
+keywords = ["NIF", "Efatura", "Portugal", "TypeScript", "Chrome extension", "Firefox addon", "AWS", "Dynamo", "Algolia", "Cloudflare", "Zustand"] 
+tags = ["efatura", "cloudflare", "react", "typescript", "chrome-extension", "firefox-addon", "web-development", "aws", "dynamo", "algolia", "cloudflare", "zustand"] 
 categories = ["Projects"] 
 author = "Pedro Silva"
 ShowBreadCrumbs = true
@@ -13,10 +13,11 @@ ShowShareButtons = true
 
 [cover]
 image = "images/dashboard.png"
-alt = "Dashboard to visualise data that powers Efatura Amigo browser extension"
-caption = "Dashboard to visualise data that powers Efatura Amigo browser extension"
+alt = "Efatura Amigo Dashboard showing a table of saved companies"
+caption = "Efatura Amigo Dashboard showing a table of saved companies"
 relative = true
 +++
+
 # 🚀 Quick Links
 
 **GitHub Repository**: [Dashboard source code]([https://github.com/PedroS11/efatura-amigo-fe](https://github.com/PedroS11/efatura-amigo-fe)) &
@@ -24,21 +25,23 @@ relative = true
 
 ---
 
-After creating the browser extension and the backend that powers it, I found it annoying to login into AWS -> Dynamo ->
-Explore items to view my saved companies + the Dynamo costs to read anything. So, createing a private dashboard where
-I could easily do it seems like the next step.
+After creating the browser extension and the backend that powers it, I found it annoying to log in to AWS -> Dynamo ->
+Explore items just to view my saved companies, plus the Dynamo costs to read anything. So creating a private dashboard
+where I could easily do it seemed like the next step.
 
 # Architecture
 
 ## Backend
+
 ### Authentication
+
 Since I'm running this on free tier services, the new endpoints must be behind authentication where I can control who can
 access it.
-To make it easier, Google authentication method was the quickest and easiest solution. The frontend would get a Google
-Identification Token, send it the login endpoint and a host session cookie would be returned. 
+To make it easier, the Google authentication method was the quickest and easiest solution. The frontend would get a Google
+Identification Token, send it to the login endpoint, and a session cookie would be returned.
 
-The session cookies needed to be saved so we can control if the cookie is still valid, so it was between Dynamo or Redis.
-Since I had all the structure to create multiple dynamos in my stack and I was the only accessing it, Dynamo was more than capable.
+The session cookie needed to be saved so I could control whether it was still valid, so it was between Dynamo and Redis.
+Since I already had the structure to create multiple Dynamo tables in my stack and I was the only one accessing it, Dynamo was more than capable.
 
 ```
 export type Session = {
@@ -49,31 +52,37 @@ export type Session = {
   id: string;
 };
 ```
-_Representation of a session item in the dynamo_
 
-With a table to hold the sessions, then login endpoint would be responsible for:
-- Validate if the identification belong to a valid Google account and generated using Efatura Amigo Dashboard Google Authentication client ID
+*Representation of a session item in Dynamo*
+
+With a table to hold the sessions, the login endpoint would then be responsible for:
+
+- Validating that the identification token belongs to a valid Google account and was generated using the Efatura Amigo Dashboard Google Authentication client ID
 - Generating a random session id
-- Save the session in its table
-- Return 200 with the cookie set in the headers
+- Saving the session in its table
+- Returning 200 with the cookie set in the headers
 
-In order to protect all the private endpoints, I created an [aws lambda authorizer](https://github.com/PedroS11/efatura-amigo-be/blob/main/src/application/authorizer/index.ts) that would sit behind all and it would
-get the session cookie, check in the dynamo if it exists and it's not expired. In case of success, return true with your Google info, if not, return false.
+In order to protect all the private endpoints, I created an [AWS Lambda authorizer](https://github.com/PedroS11/efatura-amigo-be/blob/main/src/application/authorizer/index.ts) that sits in front of all of them. It
+gets the session cookie, checks in Dynamo if it exists and isn't expired. On success, it returns true with the Google info; if not, it returns false.
 
 ### Logout
-The logout was a straigthforward lambda that would get the sessionId from the cookie, delete it from Dynamo and send back
-a delete cookie header
+
+The logout was a straightforward lambda that would get the sessionId from the cookie, delete it from Dynamo and send back
+a delete-cookie header.
 
 ### Me
-In order to validate my session and get my information to display on dashboard, I created a new endpoint
-that receives the session cookie, goes through the authorizer and, on sucess, returns the Google data.
 
-### Search feature
-I needed to quickly search the companies and needed to support name search so an indexer was what I needed, in this case,
-I had a lot of experience with Algolia. Since it had a free tier service that would fit the load i needed, I decied with it.
+In order to validate my session and get my information to display on the dashboard, I created a new endpoint
+that receives the session cookie, goes through the authorizer and, on success, returns the Google data.
 
-So the data saved would have the same format as in dynamo:
-``` 
+### Search companies
+
+I needed to quickly search the companies, including by name, so an indexer was what I needed. In this case,
+I had a lot of experience with Algolia, and since it had a free tier that would fit the load I needed, I decided to go with it.
+
+So the data saved would have the same format as in Dynamo:
+
+```
 export enum Categories {
   Saude,
   Ginasio,
@@ -102,31 +111,34 @@ export interface Company {
 }
 ```
 
-In Algolia, you can set which attributes are searchable so I decided for `nif` and `name`.
+In Algolia, you can set which attributes are searchable, so I chose `nif` and `name`.
 
-To feed Algolia with companies data, I needed to on every dynamo update also send to Algolia to guarantee consistency.
+To feed Algolia with company data, on every Dynamo update I also needed to send the data to Algolia to guarantee consistency.
 
 ### Metadata
 
-Nif-pt API has strict limits on the amount of calls i can do as explained in [here](https://blog.pedroosilva.dev/posts/efatura-amigo/#architecture-design). 
-So having the amount of requests that i'm still able to do using the /credits endpoint will be a nice to have information displayed.
+The Nif-pt API has strict limits on the amount of calls I can do, as explained [here](https://blog.pedroosilva.dev/posts/efatura-amigo/#architecture-design).
+So having the number of requests I'm still able to make, via the /credits endpoint, displayed would be a nice-to-have.
 
-There's also more metadata that would be useful information to be displayed, the number of companies saved and to be processed.
-Dynamos have a method called DescribeTable that returns this approximated data.
+There's also more metadata that would be useful to display: the number of companies saved and the number still to be processed.
+DynamoDB has a method called DescribeTable that returns this approximate data.
 
-So having an endpoint that aggregates all these information would bring a lot of useful information to the dashboard
+So having an endpoint that aggregates all this information would bring a lot of useful information to the dashboard.
 
 ## Frontend
 
 In order to build the UI I picked the most common and free technologies:
-- [Vite](https://vite.dev/) for the react
-- [tailwind](http://tailwindcss.com/)+[shadcn](https://ui.shadcn.com/) for the UI components
+
+- [Vite](https://vite.dev/) for React
+- [tailwind](http://tailwindcss.com/) + [shadcn](https://ui.shadcn.com/) for the UI components
 - [@react-oauth/google](https://github.com/MomenSherif/react-oauth) to handle the Google form and authentication flow
-- Cloudflare pages to host the website
-- Cloudflare workers to handle rate limits and forward requests
+- [Zustand](https://zustand.docs.pmnd.rs/) for store management
+- Cloudflare Pages to host the website
+- Cloudflare Workers to handle rate limits and forward requests
 
 ### Login
-The dashboard would then have a Login page
+
+The dashboard would then have a Login page.
 
 <p align="center">
     <img src="images/login.png" alt="Login page" style="width: 500px; height: auto; max-width: 100%;" />
