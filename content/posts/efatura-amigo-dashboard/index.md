@@ -3,9 +3,9 @@ date = '2026-09-16T14:15:28+01:00'
 summary = 'Dashboard to visualise data that powers Efatura Amigo browser extension'
 draft = false
 title = 'Efatura Amigo Dashboard'
-keywords = ["Lidl", "TypeScript", "Telegram", "Golang", "Parkside"]
-tags = ["lidl", "telegram", "parkside", "typescript", "golang"]
-categories = ["Projects"]
+keywords = ["NIF", "Efatura", "Portugal", "TypeScript", "Chrome extension", "Firefox addon", "AWS", "Dynamo", "Algolia", "Cloudflare"] 
+tags = ["efatura", "cloudflare", "react", "typescript", "chrome-extension", "firefox-addon", "web-development", "aws", "dynamo", "algolia", "cloudflare"] 
+categories = ["Projects"] 
 author = "Pedro Silva"
 ShowBreadCrumbs = true
 ShowReadingTime = true
@@ -13,13 +13,14 @@ ShowShareButtons = true
 
 [cover]
 image = "images/dashboard.png"
-alt = "A Telegram bot that scrapes the Portuguese Lidl website to check for availability of Parkside products"
-caption = "A Telegram bot that scrapes the Portuguese Lidl website to check for availability of Parkside products"
+alt = "Dashboard to visualise data that powers Efatura Amigo browser extension"
+caption = "Dashboard to visualise data that powers Efatura Amigo browser extension"
 relative = true
 +++
 # 🚀 Quick Links
 
-**GitHub Repository**: [efatura amigo dashboard source code]([https://github.com/PedroS11/parkside-notifier](https://github.com/PedroS11/efatura-amigo-fe))
+**GitHub Repository**: [Dashboard source code]([https://github.com/PedroS11/efatura-amigo-fe](https://github.com/PedroS11/efatura-amigo-fe)) &
+[Backend source code]([https://github.com/PedroS11/efatura-amigo-be](https://github.com/PedroS11/efatura-amigo-be))
 
 ---
 
@@ -128,22 +129,19 @@ In order to build the UI I picked the most common and free technologies:
 The dashboard would then have a Login page
 
 <p align="center">
-    <img src="images/login.png" alt="Companies table" style="width: 500px; height: auto; max-width: 100%;" />
-    <br>
+    <img src="images/login.png" alt="Login page" style="width: 500px; height: auto; max-width: 100%;" />
     <small>Login page</small>
 </p>
 
 ### Dashboard
 
 <p align="center">
-    <img src="images/dashboard.png" alt="Companies table" style="width: 500px; height: auto; max-width: 100%;" />
-    <br>
+    <img src="images/dashboard.png" alt="Dashboard page" style="width: 500px; height: auto; max-width: 100%;" />
     <small>Dashboard page</small>
 </p>
 
 <p align="center">
-    <img src="images/search.png" alt="Companies table" style="width: 500px; height: auto; max-width: 100%;" />
-    <br>
+    <img src="images/search.png" alt="Search results" style="width: 500px; height: auto; max-width: 100%;" />
     <small>Search results</small>
 </p>
 
